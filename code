@@ -1499,7 +1499,6 @@ if HAS_SHAP:
         except Exception as e:
             print(f"  ⚠️ 力导向图绘制失败: {e}")
 
-        # 3. 保存并展示
         plt.figure(fig_global.number) 
         plt.tight_layout()
         plt.savefig('extubation_failure_shap_heatmap_force.png', dpi=600, bbox_inches='tight')
